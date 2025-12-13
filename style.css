@@ -19,6 +19,11 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  /* include padding e border nel calcolo totale della larghezza/altezza degli elementi */
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
