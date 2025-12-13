@@ -60,3 +60,38 @@ body {
   font-weight: var(--font-weight-medium);
   color: var(--grey);
 }
+
+.title {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--black);
+}
+
+.description {
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-medium);
+  color: var(--grey);
+}
+
+.sale {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--green-500);
+  font-size: 2rem;
+}
+
+.fullprice {
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-medium);
+  color: var(--grey);
+  text-decoration: line-through;
+  font-size: 1rem;
+  margin-left: 16px;
+}
+
+.buyit {
+  color: var(--green-500);
+  border-radius: 6px;
+  border-color: var(--green-500);
+  text-decoration-color: var(--white);
+}
