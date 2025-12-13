@@ -1,18 +1,18 @@
 :root {
   /* colors */
   /* ### Primary */
-  --green-500: hsl(158, 36%, 37%)
-  --green-700: hsl(158, 42%, 18%)
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
   /* ### Neutral */
-  --black: hsl(212, 21%, 14%)
-  --grey: hsl(228, 12%, 48%)
-  --cream: hsl(30, 38%, 92%)
-  --white: hsl(0, 0%, 100%)
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
   /* Font families */
   --font-family-base: 'Fraunces', serif; /* per titoli */
   --font-family-second: 'Montserrat'; /* per testi */
   /* Font weight */
-  --font-weight-regular: 500;
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
 }
 
@@ -26,5 +26,5 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var();
+  background-color: var(--white);
 }
