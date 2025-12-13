@@ -37,11 +37,26 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 200px 0;
-  padding: 36px;
+  margin: 50px 0;
+  padding: 16px;
   text-align: left;
   width: 100%;
   max-width: 720px;
   min-height: 320px;
   border-radius: 8px;
+}
+
+.image_Chanel {
+  width: 100%;
+  max-width: 325px;
+  padding: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: auto;
+}
+
+.perfume {
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-medium);
+  color: var(--grey);
 }
