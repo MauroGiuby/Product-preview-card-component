@@ -106,7 +106,7 @@ picture, .image_Chanel {
   color: var(--grey);
   text-decoration: line-through;
   font-size: 1rem;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
 
 .buyit {
@@ -129,14 +129,20 @@ picture, .image_Chanel {
   background-color: var(--green-700);
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
 
 /* Media query per desktop */
-@media (min-width: 600px) {
+@media (min-width: 550px) {
   .card {
     flex-direction: row; /* immagine a sinistra, testo a destra */
-    max-width: 600px;
+    max-width: 550px;
   }
 
   picture, .image_Chanel {
