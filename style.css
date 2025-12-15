@@ -55,6 +55,12 @@ body {
   height: auto;
 }
 
+.card_text {
+  background-color: var(--cream);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .perfume {
   font-family: var(--font-family-second);
   font-weight: var(--font-weight-medium);
