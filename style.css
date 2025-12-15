@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center; /* centra la fascia orizzontalmente */
 
+  flex-direction: column; /* card sopra, attribution sotto */
   align-items: center;
   min-height: 100vh;
 }
