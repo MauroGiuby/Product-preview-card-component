@@ -133,14 +133,14 @@ picture, .image_Chanel {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Media query per desktop */
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .card {
     flex-direction: row; /* immagine a sinistra, testo a destra */
-    max-width: 700px;
+    max-width: 600px;
   }
 
   picture, .image_Chanel {
-    width: 50%;
+    width: 100%;
   }
 
   .image_Chanel {
@@ -148,7 +148,7 @@ picture, .image_Chanel {
   }
 
   .card_text {
-    width: 50%;
+    width: 100%;
     border-radius: 0 8px 8px 0; /* arrotondati solo a destra */
   }
 }

@@ -16,8 +16,11 @@
 <body>
 
   <main class="card">
-    <!-- immagine del prodotto -->
-    <img class="image_Chanel" src="./product-preview-card-component-main/images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+   <!-- immagine responsive: mobile sopra, desktop a sinistra -->
+    <picture>
+      <source srcset="./image-product-desktop.jpg" media="(min-width:768px)">
+      <img src="./image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum" class="image_Chanel">
+    </picture>
     <!-- descrizione del prodotto -->
     <div class="card_text">
       <p class="perfume">PERFUME</p>
@@ -36,7 +39,7 @@
         Add to Cart
       </button>
     </div>
-    
+
     <!-- attribution -->
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
