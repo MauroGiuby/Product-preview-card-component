@@ -22,6 +22,9 @@ body {
   background-color: var(--cream); /* sfondo fascia crema */
   display: flex;
   justify-content: center; /* centra la fascia orizzontalmente */
+
+  align-items: center;
+  min-height: 100vh;
 }
 
 .card {
@@ -30,43 +33,48 @@ body {
   min-height: 100vh;  /* copre tutta l’altezza dello schermo */
   padding: 20px;
   box-sizing: border-box;
-}
 
-.card_img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 20px; /* distacco dall’immagine al box bianco */
+  display: flex;
+  flex-direction: column;
 }
 
 .image_Chanel {
   width: 100%;
-  max-width: 325px;
-  padding: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;   /* angoli superiori arrotondati */
 }
 
 .card_text {
-  background-color: var(--cream);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  background-color: var(--white); /* solo testo su sfondo bianco */
+  border-radius: 0 0 8px 8px;   /* angoli inferiori arrotondati */
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .perfume {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  margin: 0 0 12px;
   font-family: var(--font-family-second);
   font-weight: var(--font-weight-medium);
   color: var(--grey);
 }
 
 .title {
+  font-size: 1.5rem;
+  margin: 0 0 16px;
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-bold);
   color: var(--black);
 }
 
 .description {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
   font-family: var(--font-family-second);
   font-weight: var(--font-weight-medium);
   color: var(--grey);
@@ -96,10 +104,19 @@ body {
 }
 
 .buyit {
-  color: var(--green-500);
-  border-radius: 6px;
-  border-color: var(--green-500);
-  text-decoration-color: var(--white);
+  background-color: var(--green-500);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%; /* bottone largo quanto il box */
 }
 
 .buyit:hover {
