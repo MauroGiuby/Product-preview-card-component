@@ -39,18 +39,26 @@ body {
   /* box-sizing: border-box; */
 }
 
-picture, .image_Chanel {
+/* I figli del flex: picture e card_text */
+.card > picture,
+.card > .card_text {
   width: 100%;
-  height: auto;
+}
+
+picture {
   display: block;
+  overflow: hidden; /* evita stacchi ai bordi dell'immagine */
 }
 
 .image_Chanel {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* riempie senza distorsioni */
   border-radius: 8px 8px 0 0; /* arrotondati solo sopra */
 }
 
 .card_text {
-  width: 100%;
   background-color: var(--white);
   padding: 20px;
   display: flex;
@@ -119,7 +127,7 @@ picture, .image_Chanel {
   align-items: center;
   justify-content: center;
   gap: 12px; /* spazio tra Babbo Natale e Add to Cart */ 
-  /* width: 100%; */
+  width: 100%;
 }
 
 .buyit:hover {
@@ -138,11 +146,14 @@ picture, .image_Chanel {
   .card {
     flex-direction: row; /* immagine a sinistra, testo a destra */
     max-width: 700px;
-    margin: 0;
+    margin: 0; /* centrata senza margini laterali */
   }
 
-  picture, .image_Chanel {
-    width: 100%;
+  /* Usa flex-basis per 50%-50% affidabile */
+  .card > picture,
+  .card > .card_text {
+    flex: 0 0 50%;
+    width: auto; /* evita conflitti con width */
   }
 
   .image_Chanel {
@@ -150,7 +161,6 @@ picture, .image_Chanel {
   }
 
   .card_text {
-    width: 100%;
     border-radius: 0 8px 8px 0; /* arrotondati solo a destra */
   }
 }
