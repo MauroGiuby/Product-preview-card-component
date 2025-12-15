@@ -81,6 +81,13 @@ body {
   color: var(--grey);
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
 .sale {
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-bold);
@@ -102,6 +109,10 @@ body {
   border-radius: 6px;
   border-color: var(--green-500);
   text-decoration-color: var(--white);
+}
+
+.buyit:hover {
+  background-color: var(--green-700);
 }
 
 .attribution { font-size: 11px; text-align: center; }
