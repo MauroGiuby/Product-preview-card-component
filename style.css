@@ -21,39 +21,44 @@ body {
   padding: 0;
   background-color: var(--cream); /* sfondo fascia crema */
   display: flex;
-  justify-content: center; /* centra la fascia orizzontalmente */
 
   flex-direction: column; /* card sopra, attribution sotto */
+  justify-content: center; /* centra la fascia orizzontalmente */
+
+  
   align-items: center;
   min-height: 100vh;
 }
 
 .card {
-  width: clamp(375px, 100%, 1440px); 
-  /* non meno di 375px, non più di 1440px */
-  min-height: 100vh;  /* copre tutta l’altezza dello schermo */
-  padding: 20px;
-  box-sizing: border-box;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.image_Chanel {
+picture, .image_Chanel {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.image_Chanel {
   border-radius: 8px 8px 0 0;   /* angoli superiori arrotondati */
 }
 
 .card_text {
+  width: 100%;
   background-color: var(--white); /* solo testo su sfondo bianco */
-  border-radius: 0 0 8px 8px;   /* angoli inferiori arrotondati */
   padding: 20px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 0 0 8px 8px;   /* angoli inferiori arrotondati */
 }
 
 .perfume {
@@ -128,14 +133,14 @@ body {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Media query per desktop */
-@media (min-width: 550px) {
+@media (min-width: 700px) {
   .card {
     flex-direction: row; /* immagine a sinistra, testo a destra */
-    max-width: 550px;
+    max-width: 700px;
   }
 
   picture, .image_Chanel {
-    width: 100%;
+    width: 50%;
   }
 
   .image_Chanel {
@@ -143,7 +148,7 @@ body {
   }
 
   .card_text {
-    width: 100%;
+    width: 50%;
     border-radius: 0 8px 8px 0; /* arrotondati solo a destra */
   }
 }
