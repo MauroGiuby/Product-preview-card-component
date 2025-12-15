@@ -35,19 +35,17 @@ body {
 
 .card {
   background-color: var(--cream); /* sfondo fascia crema */
-  width: 100%;        /* occupa tutta la larghezza disponibile */
-  max-width: 375px;  /* limite massimo su mobile */
+  width: clamp(375px, 100%, 1440px); 
+  /* non meno di 375px, non più di 1440px */
   min-height: 100vh;  /* copre tutta l’altezza dello schermo */
-  padding: 16px;
   box-sizing: border-box;
 }
 
 .card_img {
   flex-wrap: nowrap;
-  text-align: left;
+  justify-content: center;
   width: 100%;
- 
-  min-height: 320px;
+  min-height: 350px;
 }
 
 .image_Chanel {
