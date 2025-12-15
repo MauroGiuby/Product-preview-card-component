@@ -28,15 +28,18 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: var(--white);
+  background-color: var(--white); /* sfondo esterno bianco */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* centra la fascia orizzontalmente */
 }
 
 .card {
-  background-color: var(--cream);
-  width: 100%;
+  background-color: var(--cream); /* sfondo fascia crema */
+  width: 100%;        /* occupa tutta la larghezza disponibile */
+  max-width: 375px;  /* limite massimo su mobile */
+  min-height: 100vh;  /* copre tutta l’altezza dello schermo */
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .card_img {
