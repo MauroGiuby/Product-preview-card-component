@@ -126,3 +126,24 @@ body {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media query per desktop */
+@media (min-width: 550px) {
+  .card {
+    flex-direction: row; /* immagine a sinistra, testo a destra */
+    max-width: 550px;
+  }
+
+  picture, .image_Chanel {
+    width: 100%;
+  }
+
+  .image_Chanel {
+    border-radius: 8px 0 0 8px; /* arrotondati solo a sinistra */
+  }
+
+  .card_text {
+    width: 100%;
+    border-radius: 0 8px 8px 0; /* arrotondati solo a destra */
+  }
+}
